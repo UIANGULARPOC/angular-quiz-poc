@@ -1,0 +1,22 @@
+{
+  "name": "quizappservice",
+  "version": "1.0.0",
+  "description": "MEAN with ng2 POC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "MEAN",
+    "with",
+    "ng2"
+  ],
+  "author": "UI study group",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.5",
+    "nodemon": "^1.12.1"
+  }
+}
