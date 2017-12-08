@@ -15,7 +15,10 @@
   "author": "UI study group",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
+    "moment": "^2.19.3",
     "mongoose": "^4.13.5",
     "nodemon": "^1.12.1"
   }

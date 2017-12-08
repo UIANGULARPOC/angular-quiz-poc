@@ -1,6 +1,6 @@
 module.exports ={
 
-	uri : 'mongodb://localhost:27017/' + this.db,
+	uri : 'mongodb://127.0.0.1:27017/quizDB',
 	secret : 'sEcReT',
 	db:'quizDB'
 }

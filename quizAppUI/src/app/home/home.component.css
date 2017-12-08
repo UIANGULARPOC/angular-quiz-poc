@@ -1,0 +1,43 @@
+.jumbotron {
+	margin-top: 15px;
+	height:auto;
+    margin-bottom: 0px;
+    background-image: url(../../assets/images/bgquiz.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    text-shadow: white 0.3em 0.3em 0.3em;
+}
+.formContainer{
+	max-width: 380px;
+	padding: 10px 10px 10px;
+	margin: 0 auto;
+	background-color: #ddddddad;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.formContainer:hover{
+	border:2px solid rgba(21,230,202,1);
+	box-shadow: -1px 1px 36px -4px rgba(21,230,202,1);
+}
+
+.list-item{
+	list-style-type: none;
+
+}
+
+ul.transparent li a {color:white;}
+
+.highlight :hover {
+	border-bottom: rgba(21,230,202,1);
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
