@@ -9,18 +9,21 @@ import { AuthService} from '../services/auth.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 	
 	form : FormGroup;
-	messageClass;
-	message;
-	iconClass;
+	messageClass:String;
+	message:String;
+	iconClass:String;
+	//data.success:String;
+	//data.message:String;
 
 	constructor(
   		private formBuilder : FormBuilder,
   		private authService : AuthService
   		
-  	) { 
+  	) { 	
   		this.createForm();
   	}
 
@@ -52,15 +55,15 @@ export class HomeComponent implements OnInit {
 
 			this.authService.registerCandidate(user).subscribe((data) =>{
 			console.log(data);
-				if(!data.success){
-						this.messageClass = "alert alert-danger",
-						this.message = data.message,
-						this.iconClass = "glyphicon glyphicon-remove"
-				}else{
-						this.messageClass = "alert alert-success",
-						this.message = data.message +". Loading questions...",
-						this.iconClass = "glyphicon glyphicon-ok"
-				}
+				//if(!data.success){
+				//		this.messageClass = "alert alert-danger",
+				//		this.message = data.message,
+				//		this.iconClass = "glyphicon glyphicon-remove"
+				//}else{
+				//		this.messageClass = "alert alert-success",
+				//		this.message = data.message +". Loading questions...",
+				//		this.iconClass = "glyphicon glyphicon-ok"
+				//}
 		});
 	}
 }
